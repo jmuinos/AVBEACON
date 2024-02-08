@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include('partials/common-head') %>
+        <title>AVBEACON</title>
+    </head>
+    <body id="home-page">
+        <%- include('partials/common-header') %>
+        <main class="container-fluid bg-dark bg-opacity-10 p-0" role="main">
+            <div id="avbeaconCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores del carrusel -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#avbeaconCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#avbeaconCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#avbeaconCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <!-- Contenido del carrusel -->
+                <div class="carousel-inner">
+                    <div id="conecta-con-profesionales" class="carousel-item img-fluid active bg-cover-center">
+                        <div class="carousel-caption d-none d-md-block text-bg-dark rounded bg-opacity-50">
+                            <h2 class="card-header">Conecta con Profesionales</h2>
+                            <p class="card-text ">Únete a la red social líder para profesionales del sector
+                                                  audiovisual.</p>
+                        </div>
+                    </div>
+                    <div id="encuentra-proyectos" class="carousel-item img-fluid bg-cover-center">
+                        <div class="carousel-caption d-none d-md-block text-bg-dark rounded bg-opacity-50">
+                            <h2 class="card-header">Encuentra Proyectos</h2>
+                            <p class="card-text">Descubre oportunidades únicas para colaborar en proyectos
+                                                 innovadores.</p>
+                        </div>
+                    </div>
+                    <div id="amplia-tu-red" class="carousel-item img-fluid bg-cover-top">
+                        <div class="carousel-caption d-none d-md-block text-bg-dark rounded bg-opacity-50">
+                            <h2 class="card-header">Amplía Tu Red</h2>
+                            <p class="card-text">Construye conexiones valiosas y haz crecer tu carrera profesional.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#avbeaconCarousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#avbeaconCarousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Secciones del Inicio -->
+            <div class="row mx-0 p-4 justify-content-center gap-2 mb-1">
+                <div class="col-md-3">
+                    <div class="jumbotron bg-light rounded d-flex flex-column justify-content-center align-items-center ">
+                        <div id="projects-img" class="rounded d-flex flex-column justify-content-center align-items-center bg-cover-top">
+                            <div class="rounded d-flex flex-column justify-content-center align-items-center text-center bg-cover-top text-white bg-dark bg-opacity-50 p-3 h-100">
+                                <h2 class="mt-4">Proyectos</h2>
+                                <p>Encuentra oportunidades de empleo en el sector audiovisual.</p>
+                                <a href="/projects" class="btn btn-warning">Ver Proyectos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="jumbotron bg-light rounded d-flex flex-column justify-content-center align-items-center">
+                        <div id="professionals-img" class="rounded d-flex flex-column justify-content-center align-items-center bg-cover-top">
+                            <div class="rounded d-flex flex-column justify-content-center align-items-center text-center bg-cover-top text-white bg-dark bg-opacity-50 p-3 h-100">
+                                <h2 class="mt-4">Profesionales</h2>
+                                <p>Conecta con profesionales del cine, la televisión y la publicidad.</p>
+                                <a href="/professionals" class="btn btn-warning">Explorar Profesionales</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <%- include('partials/common-footer') %>
+        <%- include('partials/components/asistance-button') %>
+        <%- include('partials/common-scripts') %>
+    </body>
+</html>

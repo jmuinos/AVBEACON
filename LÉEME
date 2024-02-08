@@ -1,0 +1,17 @@
+Polo momento a aplicación só é funcional a nivel de front, pois tan só se aplican os coñecementos que se precisan
+demostrar en canto ao deseño de Interfaces de Usuario.
+
+É por isto que, os formularios non teñen a súa correspondente parte de back-end para levar a cabo operacións como o
+Rexistro, Login ou a funcionalidade do botón sticky de Asistencia, entre outras cousas. Estas e outras moitas  características
+implementaranse de cara ao proxecto final do cicloS.
+
+
+IMPORTANTE: 
+Para iniciar a aplicaión tan só haberá que executar ou debuggear o arquivo index.js e posteriormente 
+dirixirse a ruta "http://localhost:${3000}" no navegador desexado.
+
+CURIOSIDADES:
+-Emprégase Koa
+-Emprégase Bootstrap 5.3.2
+-Funcionalidade de cambio de Tema para modificar as cores segundo se escolla light ou Dark
+-Empréganse vistas parciales

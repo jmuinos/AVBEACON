@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex-grow: 1; }
+footer{z-index: 998;}
+
+#signup-page { background-image: url("../images/clapperboard.webp"); }
+#contact-page { background-image: url("../images/contact.webp"); }
+#login-page {
+    background-image: url("../images/home-bg.webp");
+    backdrop-filter: blur(0.125vh);
+}
+
+#encuentra-proyectos { background-image: url("../images/film.webp"); }
+#conecta-con-profesionales { background-image: url("../images/ampliar-contactos.webp"); }
+#amplia-tu-red { background-image: url("../images/ampliar-redes.webp"); }
+#encuentra-proyectos, #conecta-con-profesionales, #amplia-tu-red { height: 53vh; }
+
+#professionals-img { background-image: url("../images/professionals.webp");}
+#projects-img { background-image: url("../images/projects.webp"); }
+#professionals-img, #projects-img {
+    width: auto;
+    height: 275px;
+}
+
+#nav-logo { height: 4vh; }
+#about-us-logo { height: 30vh; }
+
+.bg-cover-top {
+    background-size: cover;
+    background-position: top;
+}
+
+.bg-cover-center {
+    background-size: cover;
+    background-position: center;
+}
+
+.chat-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: gold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.chat-button:hover {background-color: goldenrod; }
+
+.chat-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('../images/chat-asistencia.webp');
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+}
+/* Personaliza la scrollbar para navegadores basados en WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la scrollbar */
+}
+
+/* Para Firefox */
+* {
+    scrollbar-width: thin; /* "auto" o "thin" */
+    scrollbar-color: #888 #f1f1f1; /* thumb y track */
+}

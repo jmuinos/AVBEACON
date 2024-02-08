@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include('partials/common-head') %>
+        <title>Registro - AVBEACON</title>
+    </head>
+    <body id="signup-page" class="bg-cover-top">
+        <%- include('partials/common-header') %>
+        <main class="container my-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h2 class="text-center mb-4">Registrarse</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Juan" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Apellido</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Pérez" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="signupEmail" placeholder="correo@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupPassword" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="signupPassword" placeholder="********" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="********" required>
+                                </div>
+                                <fieldset class="mb-3">
+                                    <legend class="col-form-label pt-0">Sexo</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male">
+                                        <label class="form-check-label" for="genderMale">Masculino</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
+                                        <label class="form-check-label" for="genderFemale">Femenino</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other">
+                                        <label class="form-check-label" for="genderOther">Otro</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderPreferNotToSay" value="preferNotToSay" checked>
+                                        <label class="form-check-label" for="genderPreferNotToSay">Prefiero no decir</label>
+                                    </div>
+                                </fieldset>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-warning">Registrarse</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <%- include('partials/common-footer') %>
+        <%- include('partials/components/asistance-button') %>
+        <%- include('partials/common-scripts') %>
+    </body>
+</html>

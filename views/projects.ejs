@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include('partials/common-head') %>
+        <title>Proyectos</title>
+    </head>
+    <body id="home-page">
+        <%- include('partials/common-header') %>
+        <main class="container-fluid bg-dark bg-opacity-10" role="main">
+            <div class="container py-5">
+                <h1 class="mb-4">Proyectos</h1>
+                <div class="list-group">
+                    <!-- Aquí comienza la lista de proyectos -->
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <img src="/images/projects/echopixel.webp" class="rounded-circle flex-shrink-0" alt="User 1"
+                             width="64" height="64">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                            <div>
+                                <h5 class="mb-0">EchoPixel</h5>
+                                <p class="mb-0 opacity-75">Busca camarógrafo</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <img src="/images/projects/infinitybroadcast.webp" class="rounded-circle flex-shrink-0"
+                             alt="User 1" width="64" height="64">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                            <div>
+                                <h5 class="mb-0">Infinity Broadcast</h5>
+                                <p class="mb-0 opacity-75">Busca director/a</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <img src="/images/projects/lunina.webp" class="rounded-circle flex-shrink-0" alt="User 1"
+                             width="64" height="64">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                            <div>
+                                <h5 class="mb-0">Lunina</h5>
+                                <p class="mb-0 opacity-75">Busca guionista</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <img src="/images/projects/streamline.webp" class="rounded-circle flex-shrink-0" alt="User 1"
+                             width="64" height="64">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                            <div>
+                                <h5 class="mb-0">StreamLine</h5>
+                                <p class="mb-0 opacity-75">Busca técnico de Sonido</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <img src="/images/projects/visualwave.webp" class="rounded-circle flex-shrink-0" alt="User 1"
+                             width="64" height="64">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                            <div>
+                                <h5 class="mb-0">VisualWave</h5>
+                                <p class="mb-0 opacity-75">Busca técnico de Iluminación</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <%- include('partials/common-footer') %>
+        <%- include('partials/components/asistance-button') %>
+        <%- include('partials/common-scripts') %>
+    </body>
+</html>

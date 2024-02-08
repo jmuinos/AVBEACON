@@ -1,0 +1,20 @@
+{
+  "name": "avbeacon",
+  "version": "1.0.0",
+  "description": "Proyecto UI/UX",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "José Muiños",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "ejs": "^3.1.9",
+    "koa": "^2.15.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.1.0"
+  }
+}

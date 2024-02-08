@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include('partials/common-head') %>
+        <title>Quiénes Somos</title>
+    </head>
+    <body id="about-us-page">
+        <%- include('partials/common-header') %>
+        <main class="container my-5 flex-grow-1">
+            <section class="row">
+                <div class="col-lg-4">
+                    <img id="about-us-logo" src="/images/logo.svg" alt="Logo" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h1 class="display-4">Quiénes Somos</h1>
+                    <p><strong>AV</strong>BEACON es una plataforma dedicada a facilitar el contacto entre profesionales
+                                          y empleadores del mundo de la comunicación audiovisual. Somos un equipo
+                                          apasionado por contar historias y crear conexiones valiosas en la industria.
+                    </p>
+                </div>
+            </section>
+
+            <section class="my-5">
+                <h2 class="display-5 text-center pb-4">Nuestro Equipo</h2>
+                <div class="row row-cols-1 row-cols-md-5 g-4 align-items-center justify-content-center">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/images/team/Nina.webp" class="card-img-top" alt="Nombre Apellido">
+                            <div class="card-body">
+                                <h5 class="card-title">Nina</h5>
+                                <p class="card-text">Directora de Fotografía</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/images/team/Mike.webp" class="card-img-top" alt="Nombre Apellido">
+                            <div class=" card-body">
+                                <h5 class="card-title">Mike</h5>
+                                <p class="card-text">Productor Ejecutivo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/images/team/Gabriella.webp" class="card-img-top" alt="Nombre Apellido">
+                            <div class=" card-body">
+                                <h5 class="card-title">Gabriella</h5>
+                                <p class="card-text">Editora de Video</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include('partials/common-footer') %>
+        <%- include('partials/components/asistance-button') %>
+        <%- include('partials/common-scripts') %>
+    </body>
+</html>
