@@ -25,7 +25,7 @@ app.use(views(path.join(__dirname, 'views'), {
 // Middleware para añadir variables comunes a todas las vistas
 app.use(async (ctx, next) => {
 	// Simula la lógica para determinar si el usuario está logged
-	ctx.state.isUserLoggedIn = false;
+	ctx.state.isUserLoggedIn = true;
 	
 	// Añadir la página actual a ctx.state
 	ctx.state.currentPage = ctx.path === '/' ? 'home' : ctx.path.slice(1);
